@@ -11,8 +11,9 @@ function Form({ data, setData, updateDataApi, setUpdateDataApi }) {
   //* this will going to chekc whether updateDataApi means the user has clicked on the edit button or not
   let isEmpty = Object.keys(updateDataApi).length === 0;
 
-  //* this is to check if the user has clicked on the edit button to edit
+  //* this is to check if the user has clicked on the edit button to edit so it will going to shoe the title and body of that card that needs to be update so we are adding the data in the field 
   useEffect(() => {
+   
     updateDataApi &&
       setAddData({
         title: updateDataApi.title || "",
